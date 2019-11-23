@@ -1,0 +1,2114 @@
+  [1m[35m (1731.7ms)[0m  [1m[35mCREATE DATABASE "bookshelf" ENCODING = 'utf8'[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (2030.3ms)[0m  [1m[35mCREATE DATABASE "bookshelf_test" ENCODING = 'utf8'[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (116.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (87.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7785930454862883120)[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+Migrating to CreateBooks (20191117113341)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7785930454862883120)[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7785930454862883120)[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+Migrating to CreateBooks (20191117113341)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (428.0ms)[0m  [1m[35mCREATE TABLE "books" ("id" bigserial primary key, "title" character varying, "author" character varying, "ISBN" integer, "desription" text, "language" character varying, "image" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20191117113341_create_books.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191117113341"]]
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (14.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-11-17 11:36:09.376432"], ["updated_at", "2019-11-17 11:36:09.376432"]]
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (17.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_advisory_unlock(7785930454862883120)[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+Started GET "/" for ::1 at 2019-11-17 17:06:19 +0530
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/himanshugupta/.rvm/gems/ruby-2.4.2/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/himanshugupta/.rvm/gems/ruby-2.4.2/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (11.5ms)
+Completed 200 OK in 262ms (Views: 179.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-11-17 17:07:33 +0530
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:19
+  Rendered books/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 5114ms (Views: 5079.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2019-11-17 17:08:08 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:19
+  Rendered books/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 61ms (Views: 58.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-11-17 17:08:19 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:19
+  Rendered books/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 47ms (Views: 44.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books/new" for ::1 at 2019-11-17 17:08:25 +0530
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (261.4ms)
+  Rendered books/new.html.erb within layouts/application (263.0ms)
+Completed 200 OK in 318ms (Views: 309.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/books/new" for ::1 at 2019-11-17 17:10:34 +0530
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7785930454862883120)[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+Migrating to CreateBooks (20191117113933)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (258.4ms)[0m  [1m[35mCREATE TABLE "books" ("id" bigserial primary key, "title" character varying, "author" character varying, "ISBN" integer, "desription" text, "language" character varying, "image" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20191117113933_create_books.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191117113933"]]
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (17.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(7785930454862883120)[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+Started GET "/" for ::1 at 2019-11-17 17:12:26 +0530
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The `content_tag_for` method has been removed from Rails. To continue using it, add the `record_tag_helper` gem to your Gemfile:
+  gem 'record_tag_helper', '~> 1.0'
+Consult the Rails upgrade guide for details.):
+    23:     </thead>
+    24: 
+    25:     <tbody>
+    26:       <%= content_tag_for(:tr, @books) do |book| %>
+    27:             <td><%= book.title %></td>
+    28:             <td><%= book.author %></td>
+    29:             <td><%= book.ISBN %></td>
+  
+app/views/books/index.html.erb:26:in `_app_views_books_index_html_erb__251388542162505952_69884123267140'
+Started GET "/" for ::1 at 2019-11-17 17:13:31 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 205ms (Views: 201.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/books/new" for ::1 at 2019-11-17 17:13:36 +0530
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (6.7ms)
+  Rendered books/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 59ms (Views: 38.4ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/books/new" for ::1 at 2019-11-17 17:14:07 +0530
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (114.3ms)
+  Rendered books/new.html.erb within layouts/application (117.8ms)
+Completed 200 OK in 180ms (Views: 176.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for ::1 at 2019-11-17 17:14:11 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 55ms (Views: 51.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/books/new" for ::1 at 2019-11-17 17:14:22 +0530
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (8.3ms)
+  Rendered books/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 53ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for ::1 at 2019-11-17 17:18:55 +0530
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (149.4ms)
+  Rendered books/new.html.erb within layouts/application (152.4ms)
+Completed 500 Internal Server Error in 237ms (ActiveRecord: 10.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `file' for #<ActionView::Helpers::FormBuilder:0x00005591d01382a8>
+Did you mean?  fields):
+    45:   <div class="form-group">
+    46:     <%= f.label :image, class: "col-sm-2 control-label" %>
+    47:     <div class="col-sm-10">
+    48:       <%= f.file :image, class: "form-control" %>
+    49:     </div>
+    50:   </div>
+    51:   <div class="form-group">
+  
+app/views/books/_form.html.erb:48:in `block in _app_views_books__form_html_erb__2080390592818572632_47042368873280'
+app/views/books/_form.html.erb:1:in `_app_views_books__form_html_erb__2080390592818572632_47042368873280'
+app/views/books/new.html.erb:9:in `_app_views_books_new_html_erb___157086702491979382_47042376471280'
+Started GET "/books/new" for ::1 at 2019-11-17 17:19:33 +0530
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (50.1ms)
+  Rendered books/new.html.erb within layouts/application (52.7ms)
+Completed 200 OK in 774ms (Views: 770.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for ::1 at 2019-11-17 17:21:08 +0530
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (6.1ms)
+  Rendered books/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 196ms (Views: 179.0ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/books" for ::1 at 2019-11-17 17:21:09 +0530
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"65LcS1NbhR1TcywTa7bqgm/q1lTChbIGy4YCkkz47nwYlp5kZw4BQcUskM3U9I/x0TBOxGUrNVv0RwKgdpFBmQ==", "book"=>{"title"=>"", "author"=>"", "ISBN"=>"", "desription"=>"", "language"=>""}, "commit"=>"Create Book"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:30
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/books_controller.rb:30
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.9ms)
+
+
+  
+NoMethodError (undefined method `isdn' for #<Book:0x00007ff5f00cc130>
+Did you mean?  ISBN):
+  
+app/controllers/books_controller.rb:30:in `block in create'
+app/controllers/books_controller.rb:29:in `create'
+Started GET "/books/new" for ::1 at 2019-11-17 17:21:26 +0530
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (3.9ms)
+  Rendered books/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 57ms (Views: 38.9ms | ActiveRecord: 3.9ms)
+
+
+Started POST "/books" for ::1 at 2019-11-17 17:21:28 +0530
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rr8/zooikdwsbkPhHVTbEtTgX9YVSe8GjONfN5+id9C1u33hvncVgLox/z+iFr5hajrHRrLnaFuzIl8FpcvYNQ==", "book"=>{"title"=>"", "author"=>"", "ISBN"=>"", "desription"=>"", "language"=>""}, "commit"=>"Create Book"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:30
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/books_controller.rb:30
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `isbn' for #<Book:0x00007ff5f8d25168>
+Did you mean?  ISBN?
+               ISBN=
+               ISBN):
+  
+app/controllers/books_controller.rb:30:in `block in create'
+app/controllers/books_controller.rb:29:in `create'
+Started GET "/books/new" for ::1 at 2019-11-17 17:22:17 +0530
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (5.9ms)
+  Rendered books/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 194ms (Views: 174.5ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/books" for ::1 at 2019-11-17 17:22:18 +0530
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gNKUZH9GSTOPds5w1VdQ1k7XdV8ZVuneVGNmmJwTOoxz1tZLSxPNbxkpcq5qFTWl8A3tz774boNromaqpnqVaQ==", "book"=>{"title"=>"", "author"=>"", "ISBN"=>"", "desription"=>"", "language"=>""}, "commit"=>"Create Book"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:30
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/books_controller.rb:30
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `description' for #<Book:0x00007f58d8e633a8>
+Did you mean?  desription
+               desription?
+               desription=):
+  
+app/controllers/books_controller.rb:30:in `block in create'
+app/controllers/books_controller.rb:29:in `create'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7785930454862883120)[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+Migrating to CreateBooks (20191117115347)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (581.0ms)[0m  [1m[35mCREATE TABLE "books" ("id" bigserial primary key, "title" character varying, "author" character varying, "ISBN" integer, "description" text, "language" character varying, "image" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20191117115347_create_books.rb:3
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_advisory_unlock(7785930454862883120)[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7785930454862883120)[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+Migrating to CreateBooks (20191117115347)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "books" ("id" bigserial primary key, "title" character varying, "author" character varying, "ISBN" integer, "description" text, "language" character varying, "image" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20191117115347_create_books.rb:3
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7785930454862883120)[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+Started GET "/" for ::1 at 2019-11-17 17:25:41 +0530
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7785930454862883120)[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+Migrating to CreateBooks (20191117115347)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "books" ("id" bigserial primary key, "title" character varying, "author" character varying, "ISBN" integer, "description" text, "language" character varying, "image" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20191117115347_create_books.rb:3
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7785930454862883120)[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (1087.7ms)[0m  [1m[35mCREATE DATABASE "bookshelf" ENCODING = 'utf8'[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (1260.9ms)[0m  [1m[35mCREATE DATABASE "bookshelf_test" ENCODING = 'utf8'[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (123.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (449.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7785930454862883120)[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+Migrating to CreateBooks (20191117115347)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (112.8ms)[0m  [1m[35mCREATE TABLE "books" ("id" bigserial primary key, "title" character varying, "author" character varying, "ISBN" integer, "description" text, "language" character varying, "image" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20191117115347_create_books.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191117115347"]]
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (23.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-11-17 11:57:14.757228"], ["updated_at", "2019-11-17 11:57:14.757228"]]
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (16.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(7785930454862883120)[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/bin/rake:23
+Started GET "/" for ::1 at 2019-11-17 17:27:22 +0530
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The `content_tag_for` method has been removed from Rails. To continue using it, add the `record_tag_helper` gem to your Gemfile:
+  gem 'record_tag_helper', '~> 1.0'
+Consult the Rails upgrade guide for details.):
+    23:     </thead>
+    24: 
+    25:     <tbody>
+    26:       <%= content_tag_for(:tr, @books) do |book| %>
+    27:             <td><%= book.title %></td>
+    28:             <td><%= book.author %></td>
+    29:             <td><%= book.ISBN %></td>
+  
+app/views/books/index.html.erb:26:in `_app_views_books_index_html_erb___767261036456591608_47236145540080'
+Started GET "/" for ::1 at 2019-11-17 17:27:52 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 228ms (Views: 223.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/books/new" for ::1 at 2019-11-17 17:28:01 +0530
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (8.1ms)
+  Rendered books/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 72ms (Views: 38.6ms | ActiveRecord: 7.8ms)
+
+
+Started POST "/books" for ::1 at 2019-11-17 17:28:03 +0530
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tdKyw6lXMJANuHaHoaNH6iImo6ahKZWdJQKE+/YmvbaLV14GO44m6zdZIMYxWGR9LPtd5vhrZkLhWRymnKBdxQ==", "book"=>{"title"=>"", "author"=>"", "ISBN"=>"", "description"=>"", "language"=>"", "image"=>""}, "commit"=>"Create Book"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:30
+  [1m[36mBook Create (268.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "description", "language", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", ""], ["author", ""], ["description", ""], ["language", ""], ["image", ""], ["created_at", "2019-11-17 11:58:03.873907"], ["updated_at", "2019-11-17 11:58:03.873907"]]
+  ↳ app/controllers/books_controller.rb:30
+  [1m[35m (53.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:30
+Redirected to http://localhost:3000/books/1
+Completed 302 Found in 335ms (ActiveRecord: 321.8ms)
+
+
+Started GET "/books/1" for ::1 at 2019-11-17 17:28:04 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:67
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 77ms (Views: 51.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/books" for ::1 at 2019-11-17 17:28:23 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 40ms (Views: 32.9ms | ActiveRecord: 3.3ms)
+
+
+Started DELETE "/books/1" for ::1 at 2019-11-17 17:28:26 +0530
+Processing by BooksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5X033GROxCf9zjipNcRM+T7cAMYOvp2CyxC+Jmtzoj0WeXXzUBtAe2uRhHeKhimKgAaYVqkQGt/00b4UURoN2A==", "id"=>"1"}
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:67
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:57
+  [1m[36mBook Destroy (0.5ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/books_controller.rb:57
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:57
+Redirected to http://localhost:3000/books
+Completed 302 Found in 18ms (ActiveRecord: 13.1ms)
+
+
+Started GET "/books" for ::1 at 2019-11-17 17:28:26 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 43ms (Views: 40.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books/new" for ::1 at 2019-11-17 17:28:27 +0530
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (10.4ms)
+  Rendered books/new.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 64ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for ::1 at 2019-11-17 17:28:29 +0530
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IV793xLpBC1wWPqIw66FfAWFd7YpFIRRzJSWWKAZ9Zwf2xEagDASVkq5rMlTVabrC1iJ9nBWd44Izw4Fyp8V7w==", "book"=>{"title"=>"", "author"=>"", "ISBN"=>"", "description"=>"", "language"=>"", "image"=>""}, "commit"=>"Create Book"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:30
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/books_controller.rb:30
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (4.6ms)
+  Rendered books/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 50ms (Views: 37.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/books" for ::1 at 2019-11-17 17:28:57 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 39ms (Views: 37.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books/new" for ::1 at 2019-11-17 17:28:59 +0530
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (19.5ms)
+  Rendered books/new.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 61ms (Views: 57.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for ::1 at 2019-11-17 17:29:01 +0530
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ki/m3C76reQVcP3HvUasPszCSsJQKqTX032NjymR7h+sqgoZvCO7ny+Rq4YtvY+pwh+0ggloVwgXJhXSQxcObA==", "book"=>{"title"=>"", "author"=>"", "ISBN"=>"", "description"=>"", "language"=>""}, "commit"=>"Create Book"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:30
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/books_controller.rb:30
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (8.2ms)
+  Rendered books/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 64ms (Views: 49.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/books" for ::1 at 2019-11-17 17:29:25 +0530
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bKCgo64xOgoJ/47FarBPt3iJNK0adep7ZVbeSkJRywCfpOKMmmS+Vp+gMhvV8irExlOsPb3bbSZal954eDhk5Q==", "book"=>{"title"=>"Title", "author"=>"Hemu", "ISBN"=>"123456789", "description"=>"Description", "language"=>"Hindi", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fb958b7f368 @tempfile=#<Tempfile:/tmp/RackMultipart20191117-10791-139z5tj.jpg>, @original_filename="GaneshJi.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"GaneshJi.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Book"}
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `resize_to_fit' for #<ImageUploader::Uploader70216944375520:0x00007fb958a66170>):
+  
+app/controllers/books_controller.rb:27:in `create'
+Started GET "/books" for ::1 at 2019-11-17 17:32:28 +0530
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 294ms (Views: 185.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/books/new" for ::1 at 2019-11-17 17:32:31 +0530
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (9.0ms)
+  Rendered books/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 75ms (Views: 41.2ms | ActiveRecord: 9.5ms)
+
+
+Started POST "/books" for ::1 at 2019-11-17 17:32:49 +0530
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nS9rkDrV7BwMF3J2eGj32Owu8uC86aNQG0eCY+Jvu7qjqodVqAz6Zzb2JDfok9RP4vMMoOWrUI/fHBo+iOlbyQ==", "book"=>{"title"=>"Title", "author"=>"Hemu", "ISBN"=>"12345678", "description"=>"Description", "language"=>"Hindi", "image"=>#<ActionDispatch::Http::UploadedFile:0x000055c33ee5a220 @tempfile=#<Tempfile:/tmp/RackMultipart20191117-11171-4k7yiv.jpg>, @original_filename="GaneshJi.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"GaneshJi.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Book"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:30
+  [1m[36mBook Create (0.5ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "ISBN", "description", "language", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Title"], ["author", "Hemu"], ["ISBN", 12345678], ["description", "Description"], ["language", "Hindi"], ["image", "GaneshJi.jpg"], ["created_at", "2019-11-17 12:02:50.594949"], ["updated_at", "2019-11-17 12:02:50.594949"]]
+  ↳ app/controllers/books_controller.rb:30
+  [1m[35m (24.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:30
+Redirected to http://localhost:3000/books/2
+Completed 302 Found in 1122ms (ActiveRecord: 25.3ms)
+
+
+Started GET "/books/2" for ::1 at 2019-11-17 17:32:50 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:67
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 35ms (Views: 31.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2019-11-17 17:32:54 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 74ms (Views: 70.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/books" for ::1 at 2019-11-17 17:33:53 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 56ms (Views: 54.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for ::1 at 2019-11-17 17:34:49 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 59ms (Views: 57.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/2" for ::1 at 2019-11-17 17:34:51 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:67
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 62ms (Views: 40.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/books/2/edit" for ::1 at 2019-11-17 17:37:47 +0530
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:67
+  Rendering books/edit.html.erb within layouts/application
+  Rendered books/_form.html.erb (9.5ms)
+  Rendered books/edit.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 55ms (Views: 49.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/books" for ::1 at 2019-11-17 17:37:50 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (1.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 61ms (Views: 55.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/books/new" for ::1 at 2019-11-17 17:37:55 +0530
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (13.2ms)
+  Rendered books/new.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 66ms (Views: 63.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for ::1 at 2019-11-17 17:37:56 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (1.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 54ms (Views: 49.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/books/2" for ::1 at 2019-11-17 17:37:58 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:67
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 59ms (Views: 52.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/books/2/edit" for ::1 at 2019-11-17 17:37:59 +0530
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:67
+  Rendering books/edit.html.erb within layouts/application
+  Rendered books/_form.html.erb (11.2ms)
+  Rendered books/edit.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 65ms (Views: 58.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/books/2" for ::1 at 2019-11-17 17:38:02 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:67
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 40ms (Views: 36.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/books/2/edit" for ::1 at 2019-11-17 17:38:03 +0530
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:67
+  Rendering books/edit.html.erb within layouts/application
+  Rendered books/_form.html.erb (3.1ms)
+  Rendered books/edit.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/2" for ::1 at 2019-11-17 17:38:08 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:67
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 57ms (Views: 50.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/books" for ::1 at 2019-11-17 17:38:09 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 54ms (Views: 48.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/books" for ::1 at 2019-11-17 17:39:22 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/himanshugupta/My_projects/BookShelf/app/assets/config
+  /home/himanshugupta/My_projects/BookShelf/app/assets/images
+  /home/himanshugupta/My_projects/BookShelf/app/assets/javascripts
+  /home/himanshugupta/My_projects/BookShelf/app/assets/stylesheets
+  /home/himanshugupta/.rvm/gems/ruby-2.4.2/gems/bootstrap-generators-3.3.4/vendor/assets/fonts
+  /home/himanshugupta/.rvm/gems/ruby-2.4.2/gems/bootstrap-generators-3.3.4/vendor/assets/javascripts
+  /home/himanshugupta/.rvm/gems/ruby-2.4.2/gems/bootstrap-generators-3.3.4/vendor/assets/stylesheets
+  /home/himanshugupta/.rvm/gems/ruby-2.4.2/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/himanshugupta/.rvm/gems/ruby-2.4.2/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/himanshugupta/.rvm/gems/ruby-2.4.2/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/himanshugupta/.rvm/gems/ruby-2.4.2/gems/actionview-5.2.3/lib/assets/compiled
+  /home/himanshugupta/.rvm/gems/ruby-2.4.2/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/himanshugupta/My_projects/BookShelf/node_modules
+  /home/himanshugupta/.rvm/gems/ruby-2.4.2/gems/bootstrap-generators-3.3.4/vendor/twitter/bootstrap/sass
+  /home/himanshugupta/My_projects/BookShelf/app/assets/fonts):
+    14:   <![endif]-->
+    15: 
+    16:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    17:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    18:   <%= csrf_meta_tags %>
+    19: </head>
+    20: <body>
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb___2743514348189849960_69852485905440'
+Started GET "/books" for ::1 at 2019-11-17 17:40:29 +0530
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 2768ms (Views: 2752.9ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/books/new" for ::1 at 2019-11-17 17:40:51 +0530
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (14.9ms)
+  Rendered books/new.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 362ms (Views: 358.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for ::1 at 2019-11-17 17:41:02 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 235ms (Views: 229.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-11-17 18:16:22 +0530
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 6327ms (Views: 6298.6ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/books/new" for ::1 at 2019-11-17 18:16:50 +0530
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (34.3ms)
+  Rendered books/new.html.erb within layouts/application (36.6ms)
+Completed 200 OK in 266ms (Views: 263.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for ::1 at 2019-11-17 18:16:52 +0530
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GhmvnOR5DhDS4iEqdy8S+PaQ/SUrkE3NR2A8206kFSYknENZdqAYa+gDd2vn1DFv+E0DZXLSvhKDO6SGJCL1VQ==", "book"=>{"title"=>"", "author"=>"", "ISBN"=>"", "description"=>"", "language"=>""}, "commit"=>"Create Book"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:30
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/books_controller.rb:30
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (7.2ms)
+  Rendered books/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 240ms (Views: 230.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/books" for ::1 at 2019-11-17 18:16:54 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 243ms (Views: 238.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-11-17 23:30:31 +0530
+  [1m[35m (65.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (25.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 1933ms (Views: 1838.3ms | ActiveRecord: 30.9ms)
+
+
+  [1m[32mSphinx[0m  Retrying query "SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META" after error: unknown local index 'book_core' in search request - SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META
+  [1m[32mSphinx[0m  Retrying query "SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META" after error: unknown local index 'book_core' in search request - SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META
+  [1m[32mSphinx Query (76.3ms)[0m  SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20
+  [1m[32mSphinx[0m  Retrying query "SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META" after error: unknown local index 'book_core' in search request - SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META
+  [1m[32mSphinx[0m  Retrying query "SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META" after error: unknown local index 'book_core' in search request - SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META
+  [1m[32mSphinx Query (5.0ms)[0m  SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20
+  [1m[32mSphinx[0m  Retrying query "SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META" after error: unknown local index 'book_core' in search request - SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META
+  [1m[32mSphinx[0m  Retrying query "SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META" after error: unknown local index 'book_core' in search request - SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META
+  [1m[32mSphinx Query (14.4ms)[0m  SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20
+  [1m[32mSphinx[0m  Retrying query "SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META" after error: unknown local index 'book_core' in search request - SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META
+  [1m[32mSphinx[0m  Retrying query "SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META" after error: unknown local index 'book_core' in search request - SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META
+  [1m[32mSphinx Query (13.2ms)[0m  SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20
+  [1m[32mSphinx Query (1.4ms)[0m  SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20
+  [1m[32mSphinx[0m  Retrying query "SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META" after error: unknown local index 'book_core' in search request - SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META
+  [1m[32mSphinx[0m  Retrying query "SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META" after error: unknown local index 'book_core' in search request - SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META
+  [1m[32mSphinx Query (12.8ms)[0m  SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20
+  [1m[32mSphinx[0m  Retrying query "SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META" after error: unknown local index 'book_core' in search request - SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META
+  [1m[32mSphinx[0m  Retrying query "SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META" after error: unknown local index 'book_core' in search request - SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META
+  [1m[32mSphinx Query (16.0ms)[0m  SELECT * FROM `book_core` WHERE MATCH('easy') AND `sphinx_deleted` = 0 LIMIT 0, 20
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[32mSphinx[0m  Retrying query "SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META" after error: unknown local index 'book_core' in search request - SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META
+  [1m[32mSphinx[0m  Retrying query "SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META" after error: unknown local index 'book_core' in search request - SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META
+  [1m[32mSphinx Query (14.8ms)[0m  SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20
+  [1m[32mSphinx[0m  Retrying query "SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META" after error: unknown local index 'book_core' in search request - SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META
+  [1m[32mSphinx[0m  Retrying query "SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META" after error: unknown local index 'book_core' in search request - SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META
+  [1m[32mSphinx Query (7.1ms)[0m  SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20
+  [1m[32mSphinx[0m  Retrying query "SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META" after error: unknown local index 'book_core' in search request - SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META
+  [1m[32mSphinx[0m  Retrying query "SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META" after error: unknown local index 'book_core' in search request - SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META
+  [1m[32mSphinx Query (4.3ms)[0m  SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20
+  [1m[32mSphinx[0m  Retrying query "SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META" after error: unknown local index 'book_core' in search request - SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META
+  [1m[32mSphinx[0m  Retrying query "SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META" after error: unknown local index 'book_core' in search request - SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META
+  [1m[32mSphinx Query (14.3ms)[0m  SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20
+  [1m[32mSphinx[0m  Retrying query "SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META" after error: unknown local index 'book_core' in search request - SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META
+  [1m[32mSphinx[0m  Retrying query "SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META" after error: unknown local index 'book_core' in search request - SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META
+  [1m[32mSphinx Query (18.8ms)[0m  SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20
+  [1m[32mSphinx[0m  Retrying query "SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META" after error: unknown local index 'book_core' in search request - SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META
+  [1m[32mSphinx[0m  Retrying query "SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META" after error: unknown local index 'book_core' in search request - SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20; SHOW META
+  [1m[32mSphinx Query (4.8ms)[0m  SELECT * FROM `book_core` WHERE MATCH('Title') AND `sphinx_deleted` = 0 LIMIT 0, 20
+  [1m[32mSphinx Query (5.2ms)[0m  SELECT * FROM `book_core` WHERE `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx Query (2.5ms)[0m  SELECT * FROM `book_core` WHERE MATCH('abc') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx Query (1.5ms)[0m  SELECT * FROM `book_core` WHERE `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx Query (2.8ms)[0m  SELECT * FROM `book_core` WHERE `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx Query (3.3ms)[0m  SELECT * FROM `book_core` WHERE `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx Query (4.3ms)[0m  SELECT * FROM `book_core` WHERE MATCH('as') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx Query (2.3ms)[0m  SELECT * FROM `book_core` WHERE MATCH('as') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 0 results
+  [1m[36mBook Load (20.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "books"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[32mSphinx Query (3.7ms)[0m  SELECT * FROM `book_core` WHERE MATCH('title') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 1 results
+  [1m[36mBook Load (1.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1[0m  [["id", 2]]
+  [1m[32mSphinx Query (2.5ms)[0m  SELECT * FROM `book_core` WHERE MATCH('hemu') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 1 results
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1[0m  [["id", 2]]
+  [1m[32mSphinx Query (2.0ms)[0m  SELECT * FROM `book_core` WHERE MATCH('des') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 0 results
+  [1m[32mSphinx Query (1.8ms)[0m  SELECT * FROM `book_core` WHERE MATCH('description') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 1 results
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1[0m  [["id", 2]]
+  [1m[32mSphinx Query (1.9ms)[0m  SELECT * FROM `book_core` WHERE MATCH('descriptio') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 0 results
+  [1m[32mSphinx Query (1.7ms)[0m  SELECT * FROM `book_core` WHERE MATCH('description') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 1 results
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1[0m  [["id", 2]]
+Started GET "/" for ::1 at 2019-11-23 14:18:15 +0530
+  [1m[35m (41.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 1528ms (Views: 1492.6ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/api/v1/search.json?term=%22hemu%22" for ::1 at 2019-11-23 14:18:52 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/search.json"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/v1/books/search.json?term=%22hemu%22" for ::1 at 2019-11-23 14:19:20 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"\"hemu\""}
+  Rendering api/v1/books/search.json.jbuilder
+  [1m[32mSphinx Query (1.9ms)[0m  SELECT * FROM `book_core` WHERE MATCH('\"hemu\"') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 1 results
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1[0m  [["id", 2]]
+  ↳ app/views/api/v1/books/search.json.jbuilder:1
+  Rendered api/v1/books/search.json.jbuilder (8.6ms)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/books/search.json?term=%22title%22" for ::1 at 2019-11-23 14:19:51 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"\"title\""}
+  Rendering api/v1/books/search.json.jbuilder
+  [1m[32mSphinx Query (0.7ms)[0m  SELECT * FROM `book_core` WHERE MATCH('\"title\"') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 1 results
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1[0m  [["id", 2]]
+  ↳ app/views/api/v1/books/search.json.jbuilder:1
+  Rendered api/v1/books/search.json.jbuilder (3.7ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+
+
+  [1m[32mSphinx Query (66.6ms)[0m  SELECT * FROM `book_core` WHERE MATCH('title') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 1 results
+  [1m[36mBook Load (1.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1[0m  [["id", 2]]
+  [1m[36mBook Load (1.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  [1m[32mSphinx Query (96.8ms)[0m  SELECT * FROM `book_core` WHERE MATCH('title') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 1 results
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1[0m  [["id", 2]]
+Started GET "/" for ::1 at 2019-11-23 18:08:05 +0530
+  [1m[35m (23.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (1.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (50.7ms)
+Completed 200 OK in 1804ms (Views: 1740.1ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/books/new" for ::1 at 2019-11-23 18:08:11 +0530
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (362.3ms)
+  Rendered books/new.html.erb within layouts/application (383.9ms)
+Completed 200 OK in 637ms (Views: 540.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for ::1 at 2019-11-23 18:08:32 +0530
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Fdg0gmyxltOaEb5jfVmsoDsWuajA9arXankAiJW8NE1JQhFbNH6Z0D1KpMlyX6FZq1xYsyCgDWKxFKWYy1DFeg==", "book"=>{"title"=>"Title", "author"=>"Ramesh", "ISBN"=>"123456", "description"=>"des", "language"=>"English", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fd9f2a83440 @tempfile=#<Tempfile:/tmp/RackMultipart20191123-16927-1t05is3.png>, @original_filename="recurring-event.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"recurring-event.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Book"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:30
+  [1m[36mBook Create (81.8ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "ISBN", "description", "language", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Title"], ["author", "Ramesh"], ["ISBN", 123456], ["description", "des"], ["language", "English"], ["image", "recurring-event.png"], ["created_at", "2019-11-23 12:38:33.603312"], ["updated_at", "2019-11-23 12:38:33.603312"]]
+  ↳ app/controllers/books_controller.rb:30
+  [1m[35m (61.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:30
+Redirected to http://localhost:3000/books/3
+Completed 302 Found in 1208ms (ActiveRecord: 143.5ms)
+
+
+Started GET "/books/3" for ::1 at 2019-11-23 18:08:33 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:67
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 177ms (Views: 152.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/books" for ::1 at 2019-11-23 18:08:35 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 144ms (Views: 141.8ms | ActiveRecord: 0.5ms)
+
+
+  [1m[32mSphinx Query (2.2ms)[0m  SELECT * FROM `book_core` WHERE MATCH('title') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 1 results
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1[0m  [["id", 2]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."title" = $1 LIMIT $2[0m  [["title", "title"], ["LIMIT", 11]]
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."title" = $1 LIMIT $2[0m  [["title", "title"], ["LIMIT", 11]]
+  [1m[36mBook Load (1.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."title" = $1 LIMIT $2[0m  [["title", "Title"], ["LIMIT", 11]]
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."title" = $1 LIMIT $2[0m  [["title", "Title"], ["LIMIT", 11]]
+  [1m[32mSphinx Query (8.3ms)[0m  SELECT * FROM `book_core` WHERE MATCH('title') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 1 results
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7785930454862883120)[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/bin/rake:23
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/bin/rake:23
+Migrating to CreateBooks (20191117115347)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/bin/rake:23
+  [1m[35m (428.0ms)[0m  [1m[35mALTER TABLE "books" ADD "delta" boolean DEFAULT TRUE NOT NULL[0m
+  ↳ db/migrate/20191117115347_create_books.rb:15
+  [1m[35m (37.3ms)[0m  [1m[35mCREATE  INDEX  "index_books_on_delta" ON "books"  ("delta")[0m
+  ↳ db/migrate/20191117115347_create_books.rb:17
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20191117115347"]]
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/bin/rake:23
+  [1m[35m (12.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(7785930454862883120)[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7785930454862883120)[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/bin/rake:23
+Migrating to CreateBooks (20191117115347)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191117115347"]]
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/bin/rake:23
+  [1m[35m (20.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (15.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(7785930454862883120)[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/bin/rake:23
+  [1m[36mBook Update All (0.5ms)[0m  [1m[33mUPDATE "books" SET "delta" = FALSE WHERE "books"."delta" = $1[0m  [["delta", true]]
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/bin/rake:23
+  [1m[36mBook Update All (0.5ms)[0m  [1m[33mUPDATE "books" SET "delta" = FALSE WHERE "books"."delta" = $1[0m  [["delta", true]]
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/bin/rake:23
+  [1m[32mSphinx Query (2.4ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('title') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 2 results
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" IN ($1, $2)[0m  [["id", 2], ["id", 3]]
+  [1m[36mBook Load (1.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "books"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mBook Load (1.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "books"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Update (0.5ms)[0m  [1m[33mUPDATE "books" SET "updated_at" = $1, "delta" = $2 WHERE "books"."id" = $3[0m  [["updated_at", "2019-11-23 13:02:37.206974"], ["delta", true], ["id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Update (0.4ms)[0m  [1m[33mUPDATE "books" SET "updated_at" = $1, "delta" = $2 WHERE "books"."id" = $3[0m  [["updated_at", "2019-11-23 13:04:24.318959"], ["delta", true], ["id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mBook Load (1.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "books"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mBook Load (1.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "books"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mBook Load (1.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "books"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Update (1.2ms)[0m  [1m[33mUPDATE "books" SET "updated_at" = $1, "delta" = $2 WHERE "books"."id" = $3[0m  [["updated_at", "2019-11-23 13:05:09.995151"], ["delta", true], ["id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "books"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Update (0.5ms)[0m  [1m[33mUPDATE "books" SET "updated_at" = $1, "delta" = $2 WHERE "books"."id" = $3[0m  [["updated_at", "2019-11-23 13:05:54.136531"], ["delta", true], ["id", 3]]
+  [1m[35m (108.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[32mSphinx Query (1.6ms)[0m  UPDATE book_core SET sphinx_deleted = 1 WHERE id = 9
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT  "books".* FROM "books" ORDER BY "books"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Update (1.2ms)[0m  [1m[33mUPDATE "books" SET "updated_at" = $1, "delta" = $2 WHERE "books"."id" = $3[0m  [["updated_at", "2019-11-23 13:06:19.222967"], ["delta", true], ["id", 2]]
+  [1m[35m (20.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[32mSphinx Query (0.3ms)[0m  UPDATE book_core SET sphinx_deleted = 1 WHERE id = 6
+  [1m[32mSphinx Query (2.1ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('title') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 2 results
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" IN ($1, $2)[0m  [["id", 2], ["id", 3]]
+Started GET "/books" for ::1 at 2019-11-23 18:37:23 +0530
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (34.2ms)
+Completed 200 OK in 441ms (Views: 419.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/books/new" for ::1 at 2019-11-23 18:37:29 +0530
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (13.3ms)
+  Rendered books/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 145ms (Views: 141.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for ::1 at 2019-11-23 18:37:39 +0530
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BYHOZ85gsDIESyrIpT63NF2P79zxqSpekVEwbBx5NbhZG+u+lq+/MaMQMGKqOLrNzcUOxxH8jetKPJV8QpXEjw==", "book"=>{"title"=>"New Book", "author"=>"he", "ISBN"=>"", "description"=>"", "language"=>""}, "commit"=>"Create Book"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:30
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/books_controller.rb:30
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (4.9ms)
+  Rendered books/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 142ms (Views: 135.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/books" for ::1 at 2019-11-23 18:37:57 +0530
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FRF3S0zzeuAw9U9iR5ACzxgf164TskFeGt424aiMJi9Czc97aWP1+3iQmXmp/TvmOyJmbWo9qDs/fAOpar6VDw==", "book"=>{"title"=>"New Book", "author"=>"hemu", "ISBN"=>"122111", "description"=>"Des", "language"=>"Hindi", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f86b1be14c0 @tempfile=#<Tempfile:/tmp/RackMultipart20191123-18672-uxqn5d.png>, @original_filename="Register-512.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"Register-512.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Book"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:30
+  [1m[36mBook Create (0.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "ISBN", "description", "language", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "New Book"], ["author", "hemu"], ["ISBN", 122111], ["description", "Des"], ["language", "Hindi"], ["image", "Register-512.png"], ["created_at", "2019-11-23 13:07:58.002690"], ["updated_at", "2019-11-23 13:07:58.002690"]]
+  ↳ app/controllers/books_controller.rb:30
+  [1m[35m (72.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:30
+  [1m[32mSphinx Query (4.0ms)[0m  UPDATE book_core SET sphinx_deleted = 1 WHERE id = 12
+Redirected to http://localhost:3000/books/4
+Completed 302 Found in 417ms (ActiveRecord: 73.2ms)
+
+
+Started GET "/books/4" for ::1 at 2019-11-23 18:37:58 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBook Load (2.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:67
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 169ms (Views: 163.5ms | ActiveRecord: 2.5ms)
+
+
+  [1m[32mSphinx Query (1.9ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('new') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 1 results
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1[0m  [["id", 4]]
+  [1m[32mSphinx Query (2.2ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('new') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 1 results
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1[0m  [["id", 4]]
+  [1m[32mSphinx Query (2.5ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('name') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 0 results
+Started GET "/api/v1/books/search.json?term=%22title%22" for ::1 at 2019-11-23 18:53:18 +0530
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"\"title\""}
+  [1m[32mSphinx Query (2.0ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('\"title\"') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 2 results
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" IN ($1, $2)[0m  [["id", 2], ["id", 3]]
+  ↳ app/models/book.rb:14
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 5.6ms)
+
+
+  
+NoMethodError (undefined method `empty?' for true:TrueClass):
+  
+app/models/book.rb:21:in `fetch_results'
+app/controllers/api/v1/books_controller.rb:4:in `search'
+Started GET "/api/v1/books/search.json?term=%22title%22" for ::1 at 2019-11-23 18:53:38 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"\"title\""}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (7.9ms)
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for #<Hash:0x00007feed801ecc0>):
+    1: json.results @books do |book|
+    2:   json.id book.id
+    3: 	json.title book.title
+    4: 	json.author book.author
+    5: 	json.description book.description
+  
+app/views/api/v1/books/search.json.jbuilder:2:in `block in _app_views_api_v__books_search_json_jbuilder___354207182837088291_70331901469280'
+app/views/api/v1/books/search.json.jbuilder:1:in `_app_views_api_v__books_search_json_jbuilder___354207182837088291_70331901469280'
+Started GET "/api/v1/books/search.json?term=%22title%22" for ::1 at 2019-11-23 18:54:52 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"\"title\""}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.6ms)
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-11-23 18:55:50 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 365ms (Views: 363.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/books/search.json?term=%22New%22" for ::1 at 2019-11-23 18:56:07 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"\"New\""}
+  [1m[32mSphinx Query (1.0ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('\"New\"') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 1 results
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/book.rb:14
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `empty?' for true:TrueClass):
+  
+app/models/book.rb:21:in `fetch_results'
+app/controllers/api/v1/books_controller.rb:4:in `search'
+Started GET "/api/v1/books/search.json?term=New" for ::1 at 2019-11-23 18:56:33 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"New"}
+  [1m[32mSphinx Query (0.9ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('New') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 1 results
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1[0m  [["id", 4]]
+  ↳ app/models/book.rb:14
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `empty?' for true:TrueClass):
+  
+app/models/book.rb:21:in `fetch_results'
+app/controllers/api/v1/books_controller.rb:4:in `search'
+  [1m[32mSphinx Query (2.5ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('New') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 1 results
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1[0m  [["id", 4]]
+Started GET "/api/v1/books/search.json?term=New" for ::1 at 2019-11-23 18:58:37 +0530
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"New"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (1.0ms)
+Completed 200 OK in 24ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=title" for ::1 at 2019-11-23 18:58:47 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"title"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (1.0ms)
+Completed 200 OK in 8ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=hemu" for ::1 at 2019-11-23 18:58:55 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"hemu"}
+  [1m[32mSphinx Query (2.2ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('hemu') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 2 results
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" IN ($1, $2)[0m  [["id", 2], ["id", 4]]
+  ↳ app/models/book.rb:14
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 4.7ms)
+
+
+  
+NoMethodError (undefined method `empty?' for true:TrueClass):
+  
+app/models/book.rb:21:in `fetch_results'
+app/controllers/api/v1/books_controller.rb:4:in `search'
+Started GET "/api/v1/books/search.json?term=description" for ::1 at 2019-11-23 18:59:04 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"description"}
+  [1m[32mSphinx Query (0.8ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('description') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 1 results
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/book.rb:14
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.6ms)
+
+
+  
+NoMethodError (undefined method `empty?' for true:TrueClass):
+  
+app/models/book.rb:21:in `fetch_results'
+app/controllers/api/v1/books_controller.rb:4:in `search'
+Started GET "/api/v1/books/search.json?term=description" for ::1 at 2019-11-23 18:59:53 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"description"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.5ms)
+Completed 200 OK in 8ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=hemu" for ::1 at 2019-11-23 19:00:10 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"hemu"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.9ms)
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=abc" for ::1 at 2019-11-23 19:00:24 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"abc"}
+  [1m[32mSphinx Query (0.5ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('abc') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 0 results
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.4ms)
+Completed 200 OK in 23ms (Views: 1.8ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/api/v1/books/search.json?term=rr" for ::1 at 2019-11-23 19:00:37 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"rr"}
+  [1m[32mSphinx Query (0.9ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('rr') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 0 results
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.5ms)
+Completed 200 OK in 7ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=title" for ::1 at 2019-11-23 19:00:43 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"title"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.8ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=title" for ::1 at 2019-11-23 19:00:49 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"title"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.8ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=rr" for ::1 at 2019-11-23 19:00:59 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"rr"}
+  [1m[32mSphinx Query (1.1ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('rr') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 0 results
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.7ms)
+Completed 200 OK in 9ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=title" for ::1 at 2019-11-23 19:01:06 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"title"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (1.0ms)
+Completed 200 OK in 8ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=title" for ::1 at 2019-11-23 19:01:25 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"title"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.6ms)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=title" for ::1 at 2019-11-23 19:01:34 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"title"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.7ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=hemu" for ::1 at 2019-11-23 19:01:38 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"hemu"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.5ms)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=Des" for ::1 at 2019-11-23 19:02:13 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"Des"}
+  [1m[32mSphinx Query (1.3ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('Des') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 2 results
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" IN ($1, $2)[0m  [["id", 3], ["id", 4]]
+  ↳ app/models/book.rb:15
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `empty?' for true:TrueClass):
+  
+app/models/book.rb:22:in `fetch_results'
+app/controllers/api/v1/books_controller.rb:4:in `search'
+Started GET "/api/v1/books/search.json?term=Des" for ::1 at 2019-11-23 19:02:29 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"Des"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.6ms)
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=description" for ::1 at 2019-11-23 19:03:07 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"description"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.6ms)
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=Ramesh" for ::1 at 2019-11-23 19:03:12 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"Ramesh"}
+  [1m[32mSphinx Query (0.9ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('Ramesh') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 1 results
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1[0m  [["id", 3]]
+  ↳ app/models/book.rb:15
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `empty?' for true:TrueClass):
+  
+app/models/book.rb:22:in `fetch_results'
+app/controllers/api/v1/books_controller.rb:4:in `search'
+Started GET "/api/v1/books/search.json?term=Rajesg" for ::1 at 2019-11-23 19:03:51 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"Rajesg"}
+  [1m[32mSphinx Query (0.6ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('Rajesg') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 0 results
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.4ms)
+Completed 200 OK in 18ms (Views: 2.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/api/v1/books/search.json?term=Ramesh" for ::1 at 2019-11-23 19:04:00 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"Ramesh"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.6ms)
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=description" for ::1 at 2019-11-23 19:04:12 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"description"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.5ms)
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=description" for ::1 at 2019-11-23 19:04:17 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"description"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.7ms)
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=Des" for ::1 at 2019-11-23 19:04:22 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"Des"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.9ms)
+Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=Desc" for ::1 at 2019-11-23 19:04:28 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"Desc"}
+  [1m[32mSphinx Query (0.7ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('Desc') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 0 results
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.5ms)
+Completed 200 OK in 7ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-11-23 19:05:01 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 373ms (Views: 371.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/new" for ::1 at 2019-11-23 19:05:03 +0530
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (10.0ms)
+  Rendered books/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 148ms (Views: 146.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for ::1 at 2019-11-23 19:05:29 +0530
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bpOPpyqb/Q1TkwoZBssW95jTg7n8PrfUeCViI3FpuicyCap+clTyDvTIELMJzRsOCJliohxrEGGjSMczL4VLEA==", "book"=>{"title"=>"ABC", "author"=>"Rajesh", "ISBN"=>"122211", "description"=>"Desc", "language"=>"English", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fbe81403840 @tempfile=#<Tempfile:/tmp/RackMultipart20191123-19756-ahzlni.png>, @original_filename="recurring-event.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"recurring-event.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Book"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:30
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "ISBN", "description", "language", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "ABC"], ["author", "Rajesh"], ["ISBN", 122211], ["description", "Desc"], ["language", "English"], ["image", "recurring-event.png"], ["created_at", "2019-11-23 13:35:29.686373"], ["updated_at", "2019-11-23 13:35:29.686373"]]
+  ↳ app/controllers/books_controller.rb:30
+  [1m[35m (20.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:30
+  [1m[32mSphinx Query (22.1ms)[0m  UPDATE book_core SET sphinx_deleted = 1 WHERE id = 15
+Redirected to http://localhost:3000/books/5
+Completed 302 Found in 191ms (ActiveRecord: 20.7ms)
+
+
+Started GET "/books/5" for ::1 at 2019-11-23 19:05:29 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:67
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 124ms (Views: 122.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2019-11-23 19:05:37 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 134ms (Views: 131.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/books/search.json?term=title" for ::1 at 2019-11-23 19:05:54 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"title"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.5ms)
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=Rajesh" for ::1 at 2019-11-23 19:06:00 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"Rajesh"}
+  [1m[32mSphinx Query (0.8ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('Rajesh') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 1 results
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/book.rb:15
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `empty?' for true:TrueClass):
+  
+app/models/book.rb:23:in `fetch_results'
+app/controllers/api/v1/books_controller.rb:4:in `search'
+Started GET "/api/v1/books/search.json?term=Rajesh" for ::1 at 2019-11-23 19:09:50 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"Rajesh"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.4ms)
+Completed 200 OK in 8ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=ABC" for ::1 at 2019-11-23 19:10:02 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"ABC"}
+  [1m[32mSphinx Query (0.9ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('ABC') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 1 results
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1[0m  [["id", 5]]
+  ↳ app/models/book.rb:15
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 5.7ms)
+
+
+  
+NoMethodError (undefined method `empty?' for true:TrueClass):
+  
+app/models/book.rb:26:in `fetch_results'
+app/controllers/api/v1/books_controller.rb:4:in `search'
+Started GET "/api/v1/books/search.json?term=ABC" for ::1 at 2019-11-23 19:10:22 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"ABC"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.5ms)
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=ABC" for ::1 at 2019-11-23 19:12:35 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"ABC"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.5ms)
+Completed 200 OK in 9ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-11-23 19:12:40 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 154ms (Views: 148.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/books/new" for ::1 at 2019-11-23 19:12:42 +0530
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (7.5ms)
+  Rendered books/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 142ms (Views: 139.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for ::1 at 2019-11-23 19:13:22 +0530
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8S0t5xqhOkwJ8gwM6QJVouDocrBhxIngWglQONhNsUuttwg+Qm41T66pFqbmBFhbcKKTq4GRLlWBZPUohqFAfA==", "book"=>{"title"=>"Eklavya", "author"=>"Hemu", "ISBN"=>"1234", "description"=>"des", "language"=>"himdi", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fbe81bbb998 @tempfile=#<Tempfile:/tmp/RackMultipart20191123-19756-1l1zh4m.png>, @original_filename="recurring-event.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"recurring-event.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Book"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:30
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "ISBN", "description", "language", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Eklavya"], ["author", "Hemu"], ["ISBN", 1234], ["description", "des"], ["language", "himdi"], ["image", "recurring-event.png"], ["created_at", "2019-11-23 13:43:22.562204"], ["updated_at", "2019-11-23 13:43:22.562204"]]
+  ↳ app/controllers/books_controller.rb:30
+  [1m[35m (16.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:30
+  [1m[32mSphinx Query (5.2ms)[0m  UPDATE book_core SET sphinx_deleted = 1 WHERE id = 18
+Redirected to http://localhost:3000/books/6
+Completed 302 Found in 152ms (ActiveRecord: 16.4ms)
+
+
+Started GET "/books/6" for ::1 at 2019-11-23 19:13:22 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:67
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 138ms (Views: 136.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/books/search.json?term=title" for ::1 at 2019-11-23 19:13:37 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"title"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.6ms)
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=hemu" for ::1 at 2019-11-23 19:13:40 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"hemu"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.9ms)
+Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=hemu" for ::1 at 2019-11-23 19:13:43 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"hemu"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.6ms)
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=eeklavya" for ::1 at 2019-11-23 19:14:28 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"eeklavya"}
+  [1m[32mSphinx Query (0.6ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('eeklavya') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 0 results
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.5ms)
+Completed 200 OK in 6ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=eklavya" for ::1 at 2019-11-23 19:14:32 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"eklavya"}
+  [1m[32mSphinx Query (1.1ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('eklavya') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 1 results
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1[0m  [["id", 6]]
+  ↳ app/models/book.rb:14
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.6ms)
+Completed 200 OK in 13ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/books/search.json?term=hemu" for ::1 at 2019-11-23 19:14:43 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"hemu"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (1.1ms)
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=hemu" for ::1 at 2019-11-23 19:27:59 +0530
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"hemu"}
+  [1m[32mSphinx Query (2.0ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('hemu') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 3 results
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" IN ($1, $2, $3)[0m  [["id", 2], ["id", 4], ["id", 6]]
+  ↳ app/models/book.rb:15
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.7ms)
+Completed 200 OK in 69ms (Views: 3.2ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/api/v1/books/search.json?term=title" for ::1 at 2019-11-23 19:28:09 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"title"}
+  [1m[32mSphinx Query (0.7ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('title') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 2 results
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" IN ($1, $2)[0m  [["id", 2], ["id", 3]]
+  ↳ app/models/book.rb:15
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.7ms)
+Completed 200 OK in 11ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/books/search.json?term=title" for ::1 at 2019-11-23 19:28:18 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"title"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (1.2ms)
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-11-23 19:28:29 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 393ms (Views: 390.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books/new" for ::1 at 2019-11-23 19:29:03 +0530
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (6.6ms)
+  Rendered books/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 149ms (Views: 132.0ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/books" for ::1 at 2019-11-23 19:29:25 +0530
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1Ge9jZFvS8uwuiRs0ECrFghEsHajFLDS1aMJV3pli1eI/ZhUyaBEyBfhPsbfRqbvmA5RbUNBF2cOzqxHJIl6YA==", "book"=>{"title"=>"nnn", "author"=>"Hemu", "ISBN"=>"12212", "description"=>"Des", "language"=>"hindi", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fc5a4f1c6f8 @tempfile=#<Tempfile:/tmp/RackMultipart20191123-21160-1hse4f1.png>, @original_filename="recurring-event.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"recurring-event.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Book"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:30
+  [1m[36mBook Create (0.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "ISBN", "description", "language", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "nnn"], ["author", "Hemu"], ["ISBN", 12212], ["description", "Des"], ["language", "hindi"], ["image", "recurring-event.png"], ["created_at", "2019-11-23 13:59:25.695066"], ["updated_at", "2019-11-23 13:59:25.695066"]]
+  ↳ app/controllers/books_controller.rb:30
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/books_controller.rb:30
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 0.6ms)
+
+
+  
+NoMethodError (undefined method `get_result' for #<Book:0x00007fc5a4e7b4b0>):
+  
+app/models/book.rb:34:in `clear_cache'
+app/controllers/books_controller.rb:30:in `block in create'
+app/controllers/books_controller.rb:29:in `create'
+Started GET "/" for ::1 at 2019-11-23 19:30:44 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 162ms (Views: 151.9ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/books/new" for ::1 at 2019-11-23 19:30:47 +0530
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (5.4ms)
+  Rendered books/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 158ms (Views: 156.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for ::1 at 2019-11-23 19:31:04 +0530
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Re8vYsCI3Ta45UwGId2oL5EQU1naGsKY4buCHt+coY4ZdQq7mEfSNR++Vqwu26XWAVqyQjpPZS061icOgXBQuQ==", "book"=>{"title"=>"ss", "author"=>"Hemu", "ISBN"=>"111111", "description"=>"des", "language"=>"Hindi", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fc5a67e91b8 @tempfile=#<Tempfile:/tmp/RackMultipart20191123-21160-1a2ebj9.png>, @original_filename="recurring-event.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"recurring-event.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Book"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:30
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "ISBN", "description", "language", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "ss"], ["author", "Hemu"], ["ISBN", 111111], ["description", "des"], ["language", "Hindi"], ["image", "recurring-event.png"], ["created_at", "2019-11-23 14:01:04.600672"], ["updated_at", "2019-11-23 14:01:04.600672"]]
+  ↳ app/controllers/books_controller.rb:30
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/books_controller.rb:30
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 0.7ms)
+
+
+  
+NoMethodError (undefined method `get_result' for #<Book:0x00007fc5a67cd008>):
+  
+app/models/book.rb:35:in `clear_cache'
+app/controllers/books_controller.rb:30:in `block in create'
+app/controllers/books_controller.rb:29:in `create'
+Started POST "/books" for ::1 at 2019-11-23 19:31:59 +0530
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NYl0q/SVlLhgWggQZZJr+lkvK68iQxtioaSA+e7LbXdiVcyb0QUboyg/3guL/1LTehKabFvM8geEBrWxLPneVw==", "book"=>{"title"=>"ss", "author"=>"Hemu", "ISBN"=>"111111", "description"=>"des", "language"=>"Hindi", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fc5a650b3b0 @tempfile=#<Tempfile:/tmp/RackMultipart20191123-21160-95tkcx.png>, @original_filename="recurring-event.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"recurring-event.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Book"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:30
+  [1m[36mBook Create (0.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "ISBN", "description", "language", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "ss"], ["author", "Hemu"], ["ISBN", 111111], ["description", "des"], ["language", "Hindi"], ["image", "recurring-event.png"], ["created_at", "2019-11-23 14:01:59.212912"], ["updated_at", "2019-11-23 14:01:59.212912"]]
+  ↳ app/controllers/books_controller.rb:30
+  [1m[35m (106.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:30
+  [1m[32mSphinx Query (10.6ms)[0m  UPDATE book_core SET sphinx_deleted = 1 WHERE id = 27
+Redirected to http://localhost:3000/books/9
+Completed 302 Found in 290ms (ActiveRecord: 110.7ms)
+
+
+Started GET "/books/9" for ::1 at 2019-11-23 19:31:59 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:67
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 207ms (Views: 204.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-11-23 19:32:19 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 165ms (Views: 163.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/books/search.json?term=hemu" for ::1 at 2019-11-23 19:32:29 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"hemu"}
+  [1m[32mSphinx Query (0.9ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('hemu') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 4 results
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" IN ($1, $2, $3, $4)[0m  [["id", 2], ["id", 4], ["id", 6], ["id", 9]]
+  ↳ app/models/book.rb:15
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.7ms)
+Completed 200 OK in 11ms (Views: 2.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/books/search.json?term=hemu" for ::1 at 2019-11-23 19:32:58 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"hemu"}
+  [1m[32mSphinx Query (0.7ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('hemu') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 4 results
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" IN ($1, $2, $3, $4)[0m  [["id", 2], ["id", 4], ["id", 6], ["id", 9]]
+  ↳ app/models/book.rb:15
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.7ms)
+Completed 200 OK in 31ms (Views: 2.5ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/api/v1/books/search.json?term=hemu" for ::1 at 2019-11-23 19:33:03 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"hemu"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (1.1ms)
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=hemu" for ::1 at 2019-11-23 19:33:09 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"hemu"}
+  [1m[32mSphinx Query (0.7ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('hemu') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 4 results
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" IN ($1, $2, $3, $4)[0m  [["id", 2], ["id", 4], ["id", 6], ["id", 9]]
+  ↳ app/models/book.rb:15
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.8ms)
+Completed 200 OK in 12ms (Views: 2.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/books/search.json?term=hemu" for ::1 at 2019-11-23 19:33:27 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"hemu"}
+  [1m[32mSphinx Query (0.8ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('hemu') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 4 results
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" IN ($1, $2, $3, $4)[0m  [["id", 2], ["id", 4], ["id", 6], ["id", 9]]
+  ↳ app/models/book.rb:15
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.8ms)
+Completed 200 OK in 30ms (Views: 3.5ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/api/v1/books/search.json?term=hemu" for ::1 at 2019-11-23 19:33:32 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"hemu"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (1.3ms)
+Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=hemu" for ::1 at 2019-11-23 19:35:54 +0530
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"hemu"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (1.7ms)
+Completed 200 OK in 26ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-11-23 19:35:58 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 425ms (Views: 417.3ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/" for ::1 at 2019-11-23 19:36:11 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 147ms (Views: 144.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-11-23 19:36:12 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (1.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 152ms (Views: 148.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2019-11-23 19:36:12 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 134ms (Views: 130.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-11-23 19:38:08 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 148ms (Views: 144.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/books/search.json?term=title" for ::1 at 2019-11-23 19:39:08 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"title"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.6ms)
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/books/search.json?term=description" for ::1 at 2019-11-23 19:39:29 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"description"}
+  [1m[32mSphinx Query (2.8ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('description') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 1 results
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1[0m  [["id", 2]]
+  ↳ app/models/book.rb:15
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.4ms)
+Completed 200 OK in 22ms (Views: 2.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/books/search.json?term=description" for ::1 at 2019-11-23 19:39:41 +0530
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"description"}
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.8ms)
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.4ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 3]]
+  [1m[32mSphinx Query (1.7ms)[0m  UPDATE book_core SET sphinx_deleted = 1 WHERE id IN (9)
+  [1m[32mSphinx Query (0.3ms)[0m  UPDATE book_delta SET sphinx_deleted = 1 WHERE id IN (9)
+  [1m[35m (131.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[32mSphinx Query (0.3ms)[0m  UPDATE book_core SET sphinx_deleted = 1 WHERE id = 9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.3ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 2]]
+  [1m[32mSphinx Query (0.3ms)[0m  UPDATE book_core SET sphinx_deleted = 1 WHERE id IN (6)
+  [1m[32mSphinx Query (0.2ms)[0m  UPDATE book_delta SET sphinx_deleted = 1 WHERE id IN (6)
+  [1m[35m (131.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[32mSphinx Query (0.3ms)[0m  UPDATE book_core SET sphinx_deleted = 1 WHERE id = 6
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.3ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 4]]
+  [1m[32mSphinx Query (0.3ms)[0m  UPDATE book_core SET sphinx_deleted = 1 WHERE id IN (12)
+  [1m[32mSphinx Query (0.2ms)[0m  UPDATE book_delta SET sphinx_deleted = 1 WHERE id IN (12)
+  [1m[35m (17.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[32mSphinx Query (0.2ms)[0m  UPDATE book_core SET sphinx_deleted = 1 WHERE id = 12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.3ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 5]]
+  [1m[32mSphinx Query (0.2ms)[0m  UPDATE book_core SET sphinx_deleted = 1 WHERE id IN (15)
+  [1m[32mSphinx Query (0.2ms)[0m  UPDATE book_delta SET sphinx_deleted = 1 WHERE id IN (15)
+  [1m[35m (14.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[32mSphinx Query (0.2ms)[0m  UPDATE book_core SET sphinx_deleted = 1 WHERE id = 15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.3ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 6]]
+  [1m[32mSphinx Query (0.2ms)[0m  UPDATE book_core SET sphinx_deleted = 1 WHERE id IN (18)
+  [1m[32mSphinx Query (0.2ms)[0m  UPDATE book_delta SET sphinx_deleted = 1 WHERE id IN (18)
+  [1m[35m (17.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[32mSphinx Query (0.3ms)[0m  UPDATE book_core SET sphinx_deleted = 1 WHERE id = 18
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.3ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 9]]
+  [1m[32mSphinx Query (0.3ms)[0m  UPDATE book_core SET sphinx_deleted = 1 WHERE id IN (27)
+  [1m[32mSphinx Query (0.2ms)[0m  UPDATE book_delta SET sphinx_deleted = 1 WHERE id IN (27)
+  [1m[35m (17.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[32mSphinx Query (0.3ms)[0m  UPDATE book_core SET sphinx_deleted = 1 WHERE id = 27
+Started GET "/api/v1/books/search.json?term=description" for ::1 at 2019-11-23 19:42:35 +0530
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/himanshugupta/.rvm/gems/ruby-2.4.2@bookshelf/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::BooksController#search as JSON
+  Parameters: {"term"=>"description"}
+  [1m[32mSphinx Query (2.3ms)[0m  SELECT * FROM `book_core`, `book_delta` WHERE MATCH('description') AND `sphinx_deleted` = 0 LIMIT 0, 20 OPTION max_matches=10000
+  [1m[32mSphinx[0m  Found 0 results
+  Rendering api/v1/books/search.json.jbuilder
+  Rendered api/v1/books/search.json.jbuilder (0.4ms)
+Completed 200 OK in 43ms (Views: 3.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for ::1 at 2019-11-23 19:42:51 +0530
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:26
+  Rendered books/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 392ms (Views: 389.7ms | ActiveRecord: 0.5ms)
+
+

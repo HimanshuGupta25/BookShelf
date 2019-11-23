@@ -1,0 +1,126 @@
+[Mon Nov 18 02:20:52.361 2019] [14511] watchdog: main process 14512 forked ok
+[Mon Nov 18 02:20:52.362 2019] [14512] listening on 127.0.0.1:9334
+[Mon Nov 18 02:20:52.362 2019] [14512] bind() failed on 127.0.0.1, retrying...
+[Mon Nov 18 02:20:55.365 2019] [14512] bind() failed on 127.0.0.1, retrying...
+[Mon Nov 18 02:20:58.369 2019] [14512] bind() failed on 127.0.0.1, retrying...
+[Mon Nov 18 02:21:01.371 2019] [14512] bind() failed on 127.0.0.1, retrying...
+[Mon Nov 18 02:21:04.374 2019] [14512] bind() failed on 127.0.0.1, retrying...
+[Mon Nov 18 02:21:07.378 2019] [14512] bind() failed on 127.0.0.1, retrying...
+[Mon Nov 18 02:21:10.381 2019] [14512] bind() failed on 127.0.0.1, retrying...
+[Mon Nov 18 02:21:13.382 2019] [14512] bind() failed on 127.0.0.1, retrying...
+[Mon Nov 18 02:21:16.386 2019] [14512] bind() failed on 127.0.0.1, retrying...
+[Mon Nov 18 02:21:19.387 2019] [14512] bind() failed on 127.0.0.1, retrying...
+[Mon Nov 18 02:21:22.390 2019] [14512] bind() failed on 127.0.0.1, retrying...
+[Mon Nov 18 02:21:25.393 2019] [14512] bind() failed on 127.0.0.1, retrying...
+[Mon Nov 18 02:21:28.396 2019] [14512] FATAL: bind() failed on 127.0.0.1: Address already in use
+[Mon Nov 18 02:21:28.400 2019] [14511] watchdog: main process 14512 exited cleanly (exit code 1), shutting down
+[Mon Nov 18 02:23:12.234 2019] [14586] watchdog: main process 14587 forked ok
+[Mon Nov 18 02:23:12.235 2019] [14587] listening on 127.0.0.1:9334
+[Mon Nov 18 02:23:12.235 2019] [14587] bind() failed on 127.0.0.1, retrying...
+[Mon Nov 18 02:23:15.238 2019] [14587] bind() failed on 127.0.0.1, retrying...
+[Mon Nov 18 02:23:18.242 2019] [14587] bind() failed on 127.0.0.1, retrying...
+[Mon Nov 18 02:23:21.246 2019] [14587] bind() failed on 127.0.0.1, retrying...
+[Mon Nov 18 02:23:24.248 2019] [14587] bind() failed on 127.0.0.1, retrying...
+[Mon Nov 18 02:23:27.252 2019] [14587] bind() failed on 127.0.0.1, retrying...
+[Mon Nov 18 02:23:30.255 2019] [14587] bind() failed on 127.0.0.1, retrying...
+[Mon Nov 18 02:23:33.259 2019] [14587] bind() failed on 127.0.0.1, retrying...
+[Mon Nov 18 02:23:36.263 2019] [14587] bind() failed on 127.0.0.1, retrying...
+[Mon Nov 18 02:23:39.266 2019] [14587] bind() failed on 127.0.0.1, retrying...
+[Mon Nov 18 02:23:42.270 2019] [14587] bind() failed on 127.0.0.1, retrying...
+[Mon Nov 18 02:23:45.273 2019] [14587] bind() failed on 127.0.0.1, retrying...
+[Mon Nov 18 02:23:48.277 2019] [14587] FATAL: bind() failed on 127.0.0.1: Address already in use
+[Mon Nov 18 02:23:48.282 2019] [14586] watchdog: main process 14587 exited cleanly (exit code 1), shutting down
+[Sat Nov 23 14:09:49.565 2019] [7318] watchdog: main process 7319 forked ok
+[Sat Nov 23 14:09:49.570 2019] [7319] listening on 127.0.0.1:9334
+[Sat Nov 23 14:09:49.637 2019] [7319] binlog: replaying log /home/himanshugupta/My_projects/BookShelf/tmp/binlog/development/binlog.001
+[Sat Nov 23 14:09:49.648 2019] [7319] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Sat Nov 23 14:09:49.648 2019] [7319] binlog: finished replaying /home/himanshugupta/My_projects/BookShelf/tmp/binlog/development/binlog.001; 0.0 MB in 0.000 sec
+[Sat Nov 23 14:09:49.648 2019] [7319] binlog: finished replaying total 1 in 0.010 sec
+[Sat Nov 23 14:09:49.649 2019] [7319] accepting connections
+[Sat Nov 23 18:10:29.458 2019] [7319] caught SIGTERM, shutting down
+[Sat Nov 23 18:10:29.696 2019] [7319] shutdown complete
+[Sat Nov 23 18:10:29.697 2019] [7318] watchdog: main process 7319 exited cleanly (exit code 0), shutting down
+[Sat Nov 23 18:10:30.205 2019] [17194] watchdog: main process 17195 forked ok
+[Sat Nov 23 18:10:30.206 2019] [17195] listening on 127.0.0.1:9334
+[Sat Nov 23 18:10:30.258 2019] [17195] binlog: replaying log /home/himanshugupta/My_projects/BookShelf/tmp/binlog/development/binlog.001
+[Sat Nov 23 18:10:30.258 2019] [17195] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Sat Nov 23 18:10:30.258 2019] [17195] binlog: finished replaying /home/himanshugupta/My_projects/BookShelf/tmp/binlog/development/binlog.001; 0.0 MB in 0.000 sec
+[Sat Nov 23 18:10:30.258 2019] [17195] binlog: replaying log /home/himanshugupta/My_projects/BookShelf/tmp/binlog/development/binlog.002
+[Sat Nov 23 18:10:30.258 2019] [17195] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Sat Nov 23 18:10:30.258 2019] [17195] binlog: finished replaying /home/himanshugupta/My_projects/BookShelf/tmp/binlog/development/binlog.002; 0.0 MB in 0.000 sec
+[Sat Nov 23 18:10:30.258 2019] [17195] binlog: finished replaying total 2 in 0.000 sec
+[Sat Nov 23 18:10:30.267 2019] [17195] accepting connections
+[Sat Nov 23 18:22:13.088 2019] [17195] caught SIGTERM, shutting down
+[Sat Nov 23 18:22:13.301 2019] [17195] shutdown complete
+[Sat Nov 23 18:22:13.306 2019] [17194] watchdog: main process 17195 exited cleanly (exit code 0), shutting down
+[Sat Nov 23 18:22:14.160 2019] [17942] watchdog: main process 17943 forked ok
+[Sat Nov 23 18:22:14.161 2019] [17943] listening on 127.0.0.1:9334
+[Sat Nov 23 18:22:14.163 2019] [17943] accepting connections
+[Sat Nov 23 18:23:06.392 2019] [17943] caught SIGTERM, shutting down
+[Sat Nov 23 18:23:06.480 2019] [17943] shutdown complete
+[Sat Nov 23 18:23:06.485 2019] [17942] watchdog: main process 17943 exited cleanly (exit code 0), shutting down
+[Sat Nov 23 18:23:07.147 2019] [18138] watchdog: main process 18139 forked ok
+[Sat Nov 23 18:23:07.149 2019] [18139] listening on 127.0.0.1:9334
+[Sat Nov 23 18:23:07.151 2019] [18139] accepting connections
+[Sat Nov 23 18:23:39.164 2019] [18139] caught SIGHUP (seamless=1, in queue=1)
+[Sat Nov 23 18:23:39.168 2019] [18141] rotating index 'book_delta': started
+[Sat Nov 23 18:23:39.169 2019] [18141] rotating index 'book_delta': success
+[Sat Nov 23 18:23:39.169 2019] [18141] rotating index 'book_core': started
+[Sat Nov 23 18:23:39.170 2019] [18141] rotating index 'book_core': success
+[Sat Nov 23 18:23:39.171 2019] [18141] rotating index: all indexes done
+[Sat Nov 23 18:23:59.075 2019] [18139] caught SIGHUP (seamless=1, in queue=1)
+[Sat Nov 23 18:23:59.109 2019] [18141] rotating index 'book_core': started
+[Sat Nov 23 18:23:59.110 2019] [18141] rotating index 'book_core': success
+[Sat Nov 23 18:23:59.110 2019] [18141] rotating index: all indexes done
+[Sat Nov 23 18:24:37.420 2019] [18139] caught SIGHUP (seamless=1, in queue=1)
+[Sat Nov 23 18:24:37.446 2019] [18141] rotating index 'book_core': started
+[Sat Nov 23 18:24:37.447 2019] [18141] rotating index 'book_core': success
+[Sat Nov 23 18:24:37.447 2019] [18141] rotating index: all indexes done
+[Sat Nov 23 18:35:54.325 2019] [18139] caught SIGHUP (seamless=1, in queue=1)
+[Sat Nov 23 18:35:54.337 2019] [18141] rotating index 'book_delta': started
+[Sat Nov 23 18:35:54.338 2019] [18141] rotating index 'book_delta': success
+[Sat Nov 23 18:35:54.338 2019] [18141] rotating index: all indexes done
+[Sat Nov 23 18:36:19.304 2019] [18139] caught SIGHUP (seamless=1, in queue=1)
+[Sat Nov 23 18:36:19.351 2019] [18141] rotating index 'book_delta': started
+[Sat Nov 23 18:36:19.353 2019] [18141] rotating index 'book_delta': success
+[Sat Nov 23 18:36:19.353 2019] [18141] rotating index: all indexes done
+[Sat Nov 23 18:37:58.161 2019] [18139] caught SIGHUP (seamless=1, in queue=1)
+[Sat Nov 23 18:37:58.179 2019] [18141] rotating index 'book_delta': started
+[Sat Nov 23 18:37:58.179 2019] [18141] rotating index 'book_delta': success
+[Sat Nov 23 18:37:58.179 2019] [18141] rotating index: all indexes done
+[Sat Nov 23 19:05:29.768 2019] [18139] caught SIGHUP (seamless=1, in queue=1)
+[Sat Nov 23 19:05:29.773 2019] [18141] rotating index 'book_delta': started
+[Sat Nov 23 19:05:29.773 2019] [18141] rotating index 'book_delta': success
+[Sat Nov 23 19:05:29.774 2019] [18141] rotating index: all indexes done
+[Sat Nov 23 19:13:22.624 2019] [18139] caught SIGHUP (seamless=1, in queue=1)
+[Sat Nov 23 19:13:22.625 2019] [18141] rotating index 'book_delta': started
+[Sat Nov 23 19:13:22.626 2019] [18141] rotating index 'book_delta': success
+[Sat Nov 23 19:13:22.626 2019] [18141] rotating index: all indexes done
+[Sat Nov 23 19:31:59.412 2019] [18139] caught SIGHUP (seamless=1, in queue=1)
+[Sat Nov 23 19:31:59.416 2019] [18141] rotating index 'book_delta': started
+[Sat Nov 23 19:31:59.417 2019] [18141] rotating index 'book_delta': success
+[Sat Nov 23 19:31:59.417 2019] [18141] rotating index: all indexes done
+[Sat Nov 23 19:41:07.317 2019] [18139] caught SIGHUP (seamless=1, in queue=1)
+[Sat Nov 23 19:41:07.332 2019] [18141] rotating index 'book_delta': started
+[Sat Nov 23 19:41:07.332 2019] [18141] rotating index 'book_delta': success
+[Sat Nov 23 19:41:07.333 2019] [18141] rotating index: all indexes done
+[Sat Nov 23 19:41:07.833 2019] [18139] caught SIGHUP (seamless=1, in queue=1)
+[Sat Nov 23 19:41:07.835 2019] [18141] rotating index 'book_delta': started
+[Sat Nov 23 19:41:07.835 2019] [18141] rotating index 'book_delta': success
+[Sat Nov 23 19:41:07.836 2019] [18141] rotating index: all indexes done
+[Sat Nov 23 19:41:07.898 2019] [18139] caught SIGHUP (seamless=1, in queue=1)
+[Sat Nov 23 19:41:07.936 2019] [18141] rotating index 'book_delta': started
+[Sat Nov 23 19:41:07.936 2019] [18141] rotating index 'book_delta': success
+[Sat Nov 23 19:41:07.936 2019] [18141] rotating index: all indexes done
+[Sat Nov 23 19:41:07.956 2019] [18139] caught SIGHUP (seamless=1, in queue=1)
+[Sat Nov 23 19:41:07.986 2019] [18141] rotating index 'book_delta': started
+[Sat Nov 23 19:41:07.987 2019] [18141] rotating index 'book_delta': success
+[Sat Nov 23 19:41:07.987 2019] [18141] rotating index: all indexes done
+[Sat Nov 23 19:41:08.016 2019] [18139] caught SIGHUP (seamless=1, in queue=1)
+[Sat Nov 23 19:41:08.037 2019] [18141] rotating index 'book_delta': started
+[Sat Nov 23 19:41:08.039 2019] [18141] rotating index 'book_delta': success
+[Sat Nov 23 19:41:08.040 2019] [18141] rotating index: all indexes done
+[Sat Nov 23 19:41:08.082 2019] [18139] caught SIGHUP (seamless=1, in queue=1)
+[Sat Nov 23 19:41:08.090 2019] [18141] rotating index 'book_delta': started
+[Sat Nov 23 19:41:08.090 2019] [18141] rotating index 'book_delta': success
+[Sat Nov 23 19:41:08.090 2019] [18141] rotating index: all indexes done
